@@ -1,0 +1,80 @@
+/* Importa uma fonte moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Cor de fundo suave para o corpo */
+}
+.navbar {
+    border-bottom: 2px solid #e9ecef;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.nav-link.active {
+    font-weight: 700;
+    color: #007bff !important; /* Cor de destaque para o link ativo */
+}
+
+footer {
+    border-top: 2px solid #e9ecef;
+}
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de 'levantar' no hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+/* Adiciona uma transição para a imagem de perfil */
+.rounded-circle {
+    transition: transform 0.3s ease-in-out;
+}
+
+.rounded-circle:hover {
+    transform: scale(1.05); /* Aumenta a imagem sutilmente no hover */
+}
+/* Transição suave de cores */
+body, .navbar, .card, footer {
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Classes para o Tema Escuro */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .navbar {
+    background-color: #1f1f1f !important;
+    border-color: #333;
+}
+
+.dark-mode .navbar-brand, .dark-mode .nav-link {
+    color: #fff !important;
+}
+
+.dark-mode .card {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    border-color: #333;
+}
+
+.dark-mode .card-text {
+    color: #b0b0b0 !important;
+}
+
+.dark-mode footer {
+    background-color: #1f1f1f !important;
+    border-color: #333;
+    color: #fff;
+}
